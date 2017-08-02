@@ -3,6 +3,8 @@ project(cppsimu)
 
 set(CMAKE_CXX_STANDARD 11)
 
+INCLUDE_DIRECTORIES(src)
+
 set(SOURCE_FILES
         src/folly/io/async/AsyncUDPSocket.cpp
         src/folly/io/async/AsyncUDPSocket.h src/agv/agvsimu.cpp)
