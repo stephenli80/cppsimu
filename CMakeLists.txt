@@ -13,11 +13,11 @@ set(SOURCE_FILES
 
 set(BOOST_ROOT /usr/local/boost159/)
 
-#set(Boost_USE_STATIC_LIBS        ON) # only find static libs
+set(Boost_USE_STATIC_LIBS        ON) # only find static libs
 set(Boost_USE_MULTITHREADED      ON)
 set(Boost_USE_STATIC_RUNTIME    OFF)
 
-find_package(Boost 1.59.0 COMPONENTS system filesystem REQUIRED)
+find_package(Boost  COMPONENTS system filesystem REQUIRED)
 
 if(Boost_FOUND)
 
